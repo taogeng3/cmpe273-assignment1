@@ -28,7 +28,7 @@ def get_config(filename):
       return f.decoded_content
     except:
       if not filename.endswith(".json"): 
-          return "The" + filename + " file does not exist in GitHub!"
+          return "The " + filename + " file does not exist in GitHub!"
 
     yml_filename = filename.replace(".json", ".yml")
     try:
